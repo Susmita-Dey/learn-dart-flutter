@@ -1,11 +1,48 @@
 void main() {
-  print('Hello, World!');
-  print(3);
-  print(5 / 4 + 2 - 4 * 2);
-  print(75 / 5 + 2);
-  print(75 / (5 + 2)); // Dart follows BODMAS rules
-  print('3' + '2');
-  print('3' * 22);
+  // print value
+  print(51);
+  print(302);
+  print("Hello World!");
+
+  print(302 * 51);
+  print(302 + 51);
+  print(302 - 51);
+
+  // Variables
+  // <datatype> <variablename> = value;
+  int a = 303;
+  int b = 55;
+  double c = 310.50;
+  double d = 102.22;
+  String value = "Hello from Dart!";
+  String character = 'A';
+  bool check = true;
+
+  print(a);
+  print(b);
+  print("Hello World!");
+
+  print(a * b);
+  print(a + b);
+  print(c - d);
+  print(value);
+  print(value.length);
+  print(value.lastIndexOf('l'));
+  print(character);
+  print(character.runtimeType);
+  print(check);
+  print(!check);
+
+  // it's dynamic in nature so it can take value of any datatype - also, it's generally not recommend to use in code
+  dynamic someValue = false;
+  print(someValue);
+  someValue = 10.5;
+  print(someValue.abs());
+  print(someValue);
+  someValue = 'hello';
+  print(someValue);
+  someValue = 3;
+  print(someValue.isOdd);
 }
 
 /* Output:
